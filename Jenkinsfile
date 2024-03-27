@@ -20,7 +20,8 @@ pipeline {
                 alwaysLinkToLastBuild: true,
                 allowMissing: false
             ]
-            junit 'newman/report.xml', skipPublishingChecks: true
+            junit 'newman/report.xml',
+            junit skipPublishingChecks: true
         }
     }
     
