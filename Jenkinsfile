@@ -21,7 +21,7 @@ pipeline {
                 allowMissing: false
             ]
             junit 'newman/report.xml',
-            junit skipPublishingChecks: true
+            skipPublishingChecks: true
         }
     }
     
